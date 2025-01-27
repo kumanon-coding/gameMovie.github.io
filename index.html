@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動画広告一覧</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <style>
+        html{
+            font-size:100%;
+        }
+        body{
+            margin:0;
+            font-size:0;
+            font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+        }
+        #wrapp{
+            width:100%;
+            overflow: hidden;
+        }
+        h1{
+            margin:0 auto;
+            padding: 5% 0;
+            font-size:5vw;
+            text-align: center;
+            color:#898989;
+        }
+        h2{
+            margin:0 auto;
+            padding: 2%;
+            font-size:2vw;
+            text-align: center;
+            background: #898989;
+            color:#ffffff;
+        }
+        ul{
+            width: 100%;
+            margin: 2% 0 2% 2%;
+            padding: 0;
+        }
+        li{
+            display:inline-block;
+            width: 60%;
+            margin: 1% 1% 2%;
+            box-shadow: 1px 1px 5px #898989;
+        }
+        .size2 li{
+            width: 45%;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* スマホ表示 */
+        @media(max-width:768px){
+            h2{
+                font-size:4vw;
+            }
+            ul{
+                width: 100%;
+                margin: 2% auto;
+                text-align: center;
+            }
+            li, .size2 li{
+                width: 90%;
+                margin:2%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapp">
+        <h1>動画広告一覧ページ</h1>
+        <div class="size1">
+            <h2>拳極-拳で繋ぐ物語- PVゲーム内容紹介パート<br>5秒~46秒まで</h2>
+            <ul>
+                <li>
+                    <video src="./video/pv.mp4" controls></video>
+                </li>
+            </ul>
+        </div>
+        <div class="size2">
+            <h2>短いゲーム動画広告</h2>
+            <ul>
+                <li>
+                    <video src="./video/1.mp4" controls></video>
+                </li>
+                <li>
+                    <video src="./video/2.mp4" controls></video>
+                </li>
+                <li>
+                    <video src="./video/3.mp4" controls></video>
+                </li>
+                <li>
+                    <video src="./video/4.mp4" controls></video>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
